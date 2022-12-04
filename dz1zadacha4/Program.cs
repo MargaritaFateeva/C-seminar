@@ -13,25 +13,24 @@ int b = int.Parse(Console.ReadLine());
 Console.Write("Введите число c: ");
 int c = int.Parse(Console.ReadLine());
 
-int max = a;
+int max = 0;
 
-if (max>b)
+if (a>=b) // = для случая когда максимальные a=b (2 2 1)
 {
-Console.WriteLine("Max 1 число " + max);
-    }
-else
-{
-    max=b;
-    Console.WriteLine("Max 2 число " + max);
+    max = a;
 }
-    if (max>c)
-    {
-    Console.WriteLine("Max 1 число " + max);
-    }
-    else
-    {  
-        max=c;
-        Console.WriteLine("Max 3 число " + max);
-    }
-   
+if (a<b)
+{
+    max = b;
+}
+
+if (max>=c) // = для случая когда 2 максимальных равны (2 1 2 или 1 2 2)
+{
+            //  пустой, тк оставляем как есть присвоение max=max
+}
+if (max<c)
+{  
+    max = c;
+}
+
 Console.Write("Max " + max);
