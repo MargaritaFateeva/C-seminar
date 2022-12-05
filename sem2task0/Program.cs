@@ -7,10 +7,17 @@
 int num = new Random().Next(10,100); // Next(10,100) - отрезок[10;99]
 int b = num%10;                      // num = ab (двузначное число)
 int a = num/10;
-int max = a;
 
-if (max<b)
+Console.WriteLine($"Случайное число: {num}");
+if (a<b)
 {
-    max=b;
+    Console.WriteLine($"Максимальная цифра в числе {num} --> {b}");
 }
-Console.WriteLine($"Максимальная цифра в числе {num} --> {max}");
+else if (a>b)
+{
+    Console.WriteLine($"Максимальная цифра в числе {num} --> {a}");
+}
+else
+{
+    Console.WriteLine("Числа равны");
+}
