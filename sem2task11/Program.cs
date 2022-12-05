@@ -7,6 +7,10 @@
 int N = new Random().Next(100,1000);
 Console.WriteLine($"Случайное число: {N}");
 int a = N/100;
-int b = N/10;
+int b = (N/10)%10;
 int c = N%10;
-Console.WriteLine($"Случайное число удалена 2 цифра: {a}{c}");
+Console.WriteLine($"Первая цифра: {a}");
+Console.WriteLine($"Вторая цифра: {b}");
+Console.WriteLine($"Третья цифра: {c}");
+//Console.WriteLine($"Случайное число удалена 2 цифра: {a}{c}");
+Console.WriteLine($"Случайное число удалена 2 цифра: {a*10+c}");
