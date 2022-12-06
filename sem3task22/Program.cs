@@ -12,7 +12,7 @@ if (N>1)
 {
      while (i<N+1)
      { 
-        Console.Write(" "+ i*i +" "); 
+        Console.Write(" "+ i*i +" ");
            i=i+1;
      }
 }
