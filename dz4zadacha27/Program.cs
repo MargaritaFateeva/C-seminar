@@ -6,7 +6,7 @@
 
 Console.Write("ВВедите число N: ");
 int N = int.Parse(Console.ReadLine());
-Console.WriteLine($"{N} -> {SumNumeric(N)}");
+Console.WriteLine($"{N} -> {SumNumeric(N)}"); // обращение к методу
 
 int SumNumeric (int number)
 {
