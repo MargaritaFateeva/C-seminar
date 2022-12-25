@@ -37,7 +37,6 @@ Console.WriteLine();
 
 int[,] MultiEvenIndex(int[,] array)
 {
-    
 for (int j = 0; j < array.GetLength(1); j++)
 {
 for (int i = 0; i < array.GetLength(0); i++)
@@ -48,7 +47,7 @@ if(i%2==0 && j%2==0) array[i,j]= array[i, j]*array[i,j];
 return (array);
 }
 
-int[,] arr = CreateArray(3,4);
+int[,] arr = CreateArray(5,5);
 PrintArray(arr);
 Console.WriteLine();
 PrintArray(MultiEvenIndex(arr));
